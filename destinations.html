@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Holidays</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!---------------Navbar-------------------------->
+    <section class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" >
+        </div>
+        
+        <div class="nav-links" id="navlink">
+            
+            <ul>
+                <li><i class="fa fa-times" onclick="hideMenu()"></i></li>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="destinations.html"id="active">Destinations</a></li>
+                <li><a href="https://colourholidays.com/tours/"target="_blank">Tours</a></li>
+                <li><a href="https://colourholidays.com/about-us/"target="_blank">About Us</a></li>
+                <li><a href="https://colourholidays.com/contact-us/" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </section>
+    <section class="container wide">
+        <div class="bigImg">
+            <img src="images/mountain.jpg">
+            <div class="ab">
+                <h1>All destination</h1>
+                <p>Check out All Destinations offered by</p>
+                <p>colourholidays.</p>
+                <p>All with guaranteed departure dates.</p> 
+            </div>
+        </div>
+        <div class="image-grid">
+            <div class="image-box">
+                <img src="images/maldives.jpg" alt="" class="block-image">
+                <span class="test first">MALDIVES</span>
+            </div>
+            <div class="image-box">
+                <img src="images/india.jpg" alt="" class="block-image">
+                <span class="test second">INDIA</span>
+            </div>
+            <div class="image-box">
+                <img src="images/uae.jpg" alt="" class="block-image">
+                <span class="test third" >UAE</span>
+            </div>
+            <div class="image-box">
+                <img src="images/singapore.jpg" alt="" class="block-image">
+                <span class="test fourth">SINGAPORE</span>
+            </div>
+            <div class="image-box">
+                <img src="images/malayasia.jpg" alt="" class="block-image">
+                <span class="test fifth">MALAYASIA</span>
+            </div>
+        </div>
+        <a href="" ><div class="showButton">Show All</div></a>
+    </section>
+    <footer>
+        <div class="footer1">
+            <div class="firstCol">
+                <img src="images/logoWhite.png">
+                <div class="copyright">Copyright &#169; 2022 powered by colourholidays,Inc.<br>All rights reserved</div>
+            </div>
+            <div class="secondCol">
+                <div class="conatct">NO 21 02nd Floor Galle Road,<br>Colombo 04<br>0777776535<br>info@colourholidays.com</div>
+            </div>
+            <div class="thirdCol">
+                <div class="Menu">
+                    <ul>
+                       <li>Terms and Conditions</li> 
+                       <li>Privacy Policy</li> 
+                       <li>About Us</li> 
+                       <li>contact Us</li> 
+                    </ul></div>
+            </div>
+        </div>
+       </footer>
+       <script>
+        var navlink= document.getElementById('navlink');
+        function showMenu(){
+            navlink.style.display="block";
+        }
+        function hideMenu(){
+            navlink.style.display="none";
+        }
+         </script>
+</body>
+</html>

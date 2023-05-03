@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Holidays</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    
+         <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <style>
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-pagination{
+        color: white;
+        font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+<!---------------Navbar-------------------------->
+    <section class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" >
+        </div>
+        
+        <div class="nav-links" id="navlink">
+            
+            <ul>
+                <li><i class="fa fa-times" onclick="hideMenu()"></i></li>
+                <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="https://colourholidays.com/tours/" target="_blank">Tours</a></li>
+                <li><a href="https://colourholidays.com/about-us/"target="_blank">About Us</a></li>
+                <li><a href="https://colourholidays.com/contact-us/"target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </section>
+<!--------------------------Image Slider------------------------->
+<section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+            <img src="images/1.webp" alt="" class="image">
+            <div class="image-data">
+                <h1>INDIA</h1>
+                <span class="texts">Start the greatest journey in your life</span>
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="images/2.png" alt="" class="image">
+            <div class="image-data singapore">
+                <h1>MALAYASIA</h1>
+                
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="images/3.png" alt="" class="image">
+            <div class="image-data singapore">
+                <h1 class="bigger">SINGAPORE</h1>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</section>
+<!---------------------------Flight Tickets------------------------->
+<section class="flight-tickets">
+    <div class="ticket-image">
+        <img src="images/banner.jpg">
+    </div>
+    <div class="tickets-content">
+        <h2 class="YellowHeading">Flight Tickets</h2>
+        <p>Your one stop destination for all your travel requirements.<br><br>we believe in the power of travel and its ability to 
+            change people’s lives. With our wide range of travel products, we make it easier for you to find a destination that suits your needs. 
+            We specialize in Airline Tickets, Hotel Bookings, Cab/Couch/Car Rentals . Our secure transactions ensure your peace of mind while you explore the world</p>
+    </div>
+</section>
+<!------------------------------------------------------------------->
+    <section class="container">
+        <form>
+            <input type="radio" name="way" id="way" value="OneWay"><label>  One Way </label>
+            <input type="radio" name="way" id="way" value="RoundTrip"><label>  Round Trip </label><br>
+            <div class="Group4">
+                <div class="a">
+                    <div>Origin</div>
+                    <div>
+                        <select class="b">
+                            <option>Colombo-Sri Lanka(CMB)</option>
+                            <option>Singapore - Singapore (SIN)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="a">
+                    <div>Destination</div>
+                    <div>
+                        <select class="b">
+                            <option>Colombo-Sri Lanka(CMB)</option>
+                            <option>Singapore - Singapore (SIN)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="a">
+                    <div>Depart</div>
+                    <div>
+                        <input type="date" class="b">
+                    </div>
+                </div>
+                <div class="a">
+                    <div>Return</div>
+                    <div>
+                        <input type="date" class="b">
+                    </div>
+                </div>
+            </div>
+            <div class="Button">
+            <input type="button" value="Next" class="YellowButtonRight">
+        </div>
+        </form>
+    </section>
+    <!----------------------------Popular Tours--------------->
+    <section class="container">
+        <div class="center">
+            <h2 class="YellowHeading ">Popular Tours</h2>
+            <p>Check out the Most Popular Tours offered by colour holidays.</p>
+        </div>
+        <div class="Group3">
+            <div class="item one ">
+                <div class="CardImg">
+                    <img src="images/itemOne.jpg">
+                </div>
+                <div class="CardContent">
+                    <div class="price">LKR198,500</div>
+                    <h3 class="BlueHeading">Travel Bankok</h3>
+                    <div class="line"></div>
+                    <ul class="CardList">
+                        <li><img src="images/run.png" class="icon">By Walk</li>
+                        <li><img src="images/calender.png" class="icon">4 Days</li>
+                        <li><img src="images/Group.png" class="icon">Group Tours</li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="item two ">
+                <div class="CardImg">
+                    <img src="images/itemTwo.jpeg">
+                </div>
+                <div class="CardContent ">
+                    <div class="price">LKR154,650</div>
+                    <h3 class="BlueHeading">Singapore Tour</h3>
+                    <div class="line"></div>
+                    <ul class="CardList">
+                        <li><img src="images/run.png" class="icon">By Walk</li>
+                        <li><img src="images/calender.png" class="icon">4 Days</li>
+                        <li><img src="images/Group.png" class="icon">Group Tours</li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="item one">
+                <div class="CardImg">
+                    <img src="images/itemThree.jpg">
+                </div>
+                <div class="CardContent">
+                    <div class="price">LKR286,000</div>
+                    <h3 class="BlueHeading">Travel Bankok</h3>
+                    <div class="line"></div>
+                    <ul class="CardList">
+                        <li><img src="images/run.png" class="icon">By Walk</li>
+                        <li><img src="images/calender.png" class="icon">4 Days</li>
+                        <li><img src="images/Group.png" class="icon">Group Tours</li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+        
+        
+        <a href="" ></a><div class="showButton">Show All</div></a>
+        
+    </section>
+    <!---------------------Why Us------------------------>
+    <section class="container why">
+        <div class="WhyUs">
+            <div class="MainLeft">
+                <h2 class="YellowHeading  capitalize">Why Us?</h2>
+                <p class="BannerPara">Organising your own holiday can be a
+                stressful task. Let us do the work for you! By choosing 
+                colour holidays, you can save time and hassle by booking all
+                of your itinerary services directly with a specialised local
+                agency.
+                </p>
+                <div class="list">
+                    <div class="listLept">
+                        <ul>
+                            <li><img src="images/tick.png" class="icon">First Class Flights</li>
+                            <li><img src="images/tick.png" class="icon">5 Star Accommodations</li>
+                            <li><img src="images/tick.png" class="icon">Inclusive Packages</li>
+                            <li><img src="images/tick.png" class="icon">Latest Model Vehicles</li>
+                            <li><img src="images/tick.png" class="icon">Handpicked Hotels</li>
+                        </ul>
+                    </div>
+                    <div class="listRight">
+                        <ul>
+                            <li><img src="images/tick.png" class="icon">Accesibility Management</li>
+                            <li><img src="images/tick.png" class="icon">10 Languages Available</li>
+                            <li><img src="images/tick.png" class="icon">+ 120 Premium City Tours</li>
+                            <li><img src="images/tick.png" class="icon">Great Tour Guides</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="MainRight">
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/L8sPZIkKywA" title="TOP 10 things to do in SINGAPORE | Travel Guide 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+ <!----------------Popular Destinations---------------->
+ <section class="pop-destinations">
+    <div>
+        <h2>Popular Destinations</h2>
+        <p>Planning a holiday with Colour Holidays If you are dreaming of a vacation, 
+            there is no better time to book than now. With so many
+             deals with new hotels and resorts , you can find some 
+             of the best prices on your dream getaway.
+        </p>
+    </div>
+    <div class="image-grid">
+        <div class="image-box">
+            <img src="images/maldives.jpg" alt="" class="block-image">
+            <span class="test first">MALDIVES</span>
+        </div>
+        <div class="image-box">
+            <img src="images/india.jpg" alt="" class="block-image">
+            <span class="test second">INDIA</span>
+        </div>
+        <div class="image-box">
+            <img src="images/uae.jpg" alt="" class="block-image">
+            <span class="test third" >UAE</span>
+        </div>
+        <div class="image-box">
+            <img src="images/singapore.jpg" alt="" class="block-image">
+            <span class="test fourth">SINGAPORE</span>
+        </div>
+        <div class="image-box">
+            <img src="images/malayasia.jpg" alt="" class="block-image">
+            <span class="test fifth">MALAYASIA</span>
+        </div>
+
+    </div>
+
+        <a href="destinations.html" ><div class="showButton">Show All</div></a>
+    </section>
+    <script type="text/javascript" src="script.js">
+     
+    </script>
+   <footer>
+    <div class="footer1">
+        <div class="firstCol">
+            <img src="images/logoWhite.png">
+            <div class="copyright">Copyright &#169; 2022 powered by colourholidays,Inc.<br>All rights reserved</div>
+        </div>
+        <div class="secondCol">
+            <div class="conatct">NO 21 02nd Floor Galle Road,<br>Colombo 04<br>0777776535<br>info@colourholidays.com</div>
+        </div>
+        <div class="thirdCol">
+            <div class="Menu">
+                <ul>
+                   <li>Terms and Conditions</li> 
+                   <li>Privacy Policy</li> 
+                   <li>About Us</li> 
+                   <li>contact Us</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+   </footer>
+
+    <!-- Swiper JS -->
+   <script src="swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       slidesPerView: 1,
+       spaceBetween: 30,
+       loop: true,
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
+   <script>
+   var navlink= document.getElementById('navlink');
+   function showMenu(){
+       navlink.style.display="block";
+   }
+   function hideMenu(){
+       navlink.style.display="none";
+   }
+    </script>
+</body>
+</html>
